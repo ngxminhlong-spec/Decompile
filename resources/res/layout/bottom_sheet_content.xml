@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/bottom_sheet_content"
+    android:background="#ffffff"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <include
+        android:id="@+id/bottom_elements"
+        android:visibility="gone"
+        layout="@layout/elements"/>
+    <include
+        android:id="@+id/bottom_info"
+        android:visibility="gone"
+        layout="@layout/bottom_info"/>
+    <include
+        android:id="@+id/setup_io"
+        android:visibility="gone"
+        layout="@layout/setup_io_layout"/>
+    <include
+        android:id="@+id/timediagrams"
+        android:visibility="gone"
+        layout="@layout/time_diagrams_list"/>
+    <include
+        android:id="@+id/insert_projects"
+        android:visibility="gone"
+        layout="@layout/insdert_project_bottom_layout"/>
+</FrameLayout>

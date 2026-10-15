@@ -1,0 +1,46 @@
+package D;
+
+import android.app.Notification;
+import android.app.NotificationManager;
+import android.content.Context;
+import android.content.res.Configuration;
+import android.icu.text.DecimalFormatSymbols;
+import android.os.LocaleList;
+import android.os.UserManager;
+import java.util.Locale;
+
+/* compiled from: r8-map-id-6ef7449bfc4a9963e18f062677f14f1522bd0a2d779b053409b8e2de3977822d */
+/* loaded from: classes.dex */
+public abstract class b {
+    public static boolean a(NotificationManager notificationManager) {
+        return notificationManager.areNotificationsEnabled();
+    }
+
+    public static Context b(Context context) {
+        return context.createDeviceProtectedStorageContext();
+    }
+
+    public static LocaleList c(Locale... localeArr) {
+        return new LocaleList(localeArr);
+    }
+
+    public static DecimalFormatSymbols d(Locale locale) {
+        return DecimalFormatSymbols.getInstance(locale);
+    }
+
+    public static LocaleList e(Configuration configuration) {
+        return configuration.getLocales();
+    }
+
+    public static boolean f(Context context) {
+        return ((UserManager) context.getSystemService(UserManager.class)).isUserUnlocked();
+    }
+
+    public static void g(Notification.Action.Builder builder, boolean z4) {
+        builder.setAllowGeneratedReplies(z4);
+    }
+
+    public static void h(Notification.Builder builder) {
+        builder.setRemoteInputHistory(null);
+    }
+}

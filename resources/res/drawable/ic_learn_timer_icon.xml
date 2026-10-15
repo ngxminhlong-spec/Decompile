@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:height="52.4156dp"
+    android:width="104dp"
+    android:viewportWidth="46.63"
+    android:viewportHeight="23.5">
+    <path
+        android:fillColor="@color/icons_dark"
+        android:pathData="M4.78,23.05c0,-5.12 2.08,-9.76 5.43,-13.12 3.36,-3.36 7.99,-5.43 13.12,-5.43 5.12,0 9.76,2.08 13.12,5.43 3.36,3.36 5.43,7.99 5.43,13.12l-3.09,0c0,-4.27 -1.73,-8.13 -4.53,-10.93 -2.8,-2.8 -6.66,-4.53 -10.93,-4.53 -4.27,0 -8.13,1.73 -10.93,4.53 -2.8,2.8 -4.53,6.66 -4.53,10.93l-3.09,0z"/>
+    <path
+        android:fillColor="@color/switch_active"
+        android:pathData="M17.18,12.56l9.38,7.5c0.51,0.41 -0.48,2.15 -0.94,2.61l0,0c-0.46,0.46 -1.91,1.16 -2.34,0.67l-7.77,-9.11c-0.42,-0.49 -0.46,-1.21 0,-1.67l0,0c0.46,-0.46 1.16,-0.41 1.67,0z"/>
+    <path
+        android:fillColor="@color/icons_dark"
+        android:pathData="M-0,22.07h3.66v0.94h-3.66z"/>
+    <path
+        android:fillColor="@color/icons_dark"
+        android:pathData="M42.97,22.13h3.66v0.88h-3.66z"/>
+    <path
+        android:fillColor="@color/icons_dark"
+        android:pathData="M22.8928,3.6591l0,-3.6584l0.9454,0l-0,3.6584z"/>
+    <path
+        android:fillColor="@color/icons_dark"
+        android:pathData="M37.0299,9.2107l2.5869,-2.5869l0.5583,0.5583l-2.5869,2.5869z"/>
+    <path
+        android:fillColor="@color/icons_dark"
+        android:pathData="M9.5787,9.1425l-2.5869,-2.5869l-0.6148,0.6148l2.5869,2.5869z"/>
+    <path
+        android:fillColor="@color/switch_active"
+        android:pathData="M41.0765,15.6988l1.696,-0.6852l0.2528,0.6258l-1.696,0.6852z"/>
+    <path
+        android:fillColor="@color/switch_active"
+        android:pathData="M5.4738,15.6988l-1.696,-0.6852l-0.2528,0.6258l1.696,0.6852z"/>
+    <path
+        android:fillColor="@color/switch_active"
+        android:pathData="M30.7315,5.1223l0.7147,-1.6838l-0.6213,-0.2637l-0.7147,1.6838z"/>
+    <path
+        android:fillColor="@color/switch_active"
+        android:pathData="M16.0782,5.1223l-0.7147,-1.6838l0.6213,-0.2637l0.7147,1.6838z"/>
+</vector>

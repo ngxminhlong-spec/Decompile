@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="go_premium_icon_size">20dp</dimen>
+    <dimen name="go_premium_items_text_size">14dp</dimen>
+    <dimen name="go_premium_paddings">12dp</dimen>
+</resources>

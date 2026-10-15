@@ -1,0 +1,9 @@
+package G2;
+
+/* compiled from: r8-map-id-6ef7449bfc4a9963e18f062677f14f1522bd0a2d779b053409b8e2de3977822d */
+/* loaded from: classes.dex */
+public abstract class c {
+    public abstract void a(float f4);
+
+    public abstract void b(int i4);
+}

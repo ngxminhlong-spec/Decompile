@@ -1,0 +1,11 @@
+package g0;
+
+import h0.C1694b;
+
+/* compiled from: r8-map-id-6ef7449bfc4a9963e18f062677f14f1522bd0a2d779b053409b8e2de3977822d */
+/* loaded from: classes.dex */
+public interface c {
+    String a();
+
+    void b(C1694b c1694b);
+}

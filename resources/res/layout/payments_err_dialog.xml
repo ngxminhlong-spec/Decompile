@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:padding="24dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:layout_gravity="center_vertical"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@drawable/ic_node_holder_delete"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/payment_error"
+            android:layout_marginStart="24dp"
+            style="@style/MediumDarkText"/>
+    </LinearLayout>
+</FrameLayout>

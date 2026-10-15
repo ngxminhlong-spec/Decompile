@@ -1,0 +1,175 @@
+package z;
+
+import android.content.res.Resources;
+import android.content.res.TypedArray;
+import android.graphics.Typeface;
+import android.os.Handler;
+import android.os.Looper;
+import android.util.AttributeSet;
+import android.util.Base64;
+import android.util.Log;
+import android.util.TypedValue;
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.List;
+import org.xmlpull.v1.XmlPullParser;
+
+/* compiled from: r8-map-id-6ef7449bfc4a9963e18f062677f14f1522bd0a2d779b053409b8e2de3977822d */
+/* renamed from: z.b, reason: case insensitive filesystem */
+/* loaded from: classes.dex */
+public abstract class AbstractC2123b {
+
+    /* renamed from: a, reason: collision with root package name */
+    public static final float[][] f15924a = {new float[]{0.401288f, 0.650173f, -0.051461f}, new float[]{-0.250268f, 1.204414f, 0.045854f}, new float[]{-0.002079f, 0.048952f, 0.953127f}};
+
+    /* renamed from: b, reason: collision with root package name */
+    public static final float[][] f15925b = {new float[]{1.8620678f, -1.0112547f, 0.14918678f}, new float[]{0.38752654f, 0.62144744f, -0.00897398f}, new float[]{-0.0158415f, -0.03412294f, 1.0499644f}};
+    public static final float[] c = {95.047f, 100.0f, 108.883f};
+    public static final float[][] d = {new float[]{0.41233894f, 0.35762063f, 0.18051042f}, new float[]{0.2126f, 0.7152f, 0.0722f}, new float[]{0.01932141f, 0.11916382f, 0.9503448f}};
+
+    public static androidx.activity.result.c b(TypedArray typedArray, XmlPullParser xmlPullParser, Resources.Theme theme, String str, int i4) {
+        androidx.activity.result.c cVar;
+        if (xmlPullParser.getAttributeValue("http://schemas.android.com/apk/res/android", str) != null) {
+            TypedValue typedValue = new TypedValue();
+            typedArray.getValue(i4, typedValue);
+            int i5 = typedValue.type;
+            if (i5 >= 28 && i5 <= 31) {
+                return new androidx.activity.result.c(null, null, typedValue.data);
+            }
+            try {
+                cVar = androidx.activity.result.c.b(typedArray.getResources(), typedArray.getResourceId(i4, 0), theme);
+            } catch (Exception e4) {
+                Log.e("ComplexColorCompat", "Failed to inflate ComplexColor.", e4);
+                cVar = null;
+            }
+            if (cVar != null) {
+                return cVar;
+            }
+        }
+        return new androidx.activity.result.c(null, null, 0);
+    }
+
+    public static String c(TypedArray typedArray, XmlPullParser xmlPullParser, String str, int i4) {
+        if (d(xmlPullParser, str)) {
+            return typedArray.getString(i4);
+        }
+        return null;
+    }
+
+    public static boolean d(XmlPullParser xmlPullParser, String str) {
+        return xmlPullParser.getAttributeValue("http://schemas.android.com/apk/res/android", str) != null;
+    }
+
+    public static int e(float f4) {
+        if (f4 < 1.0f) {
+            return -16777216;
+        }
+        if (f4 > 99.0f) {
+            return -1;
+        }
+        float f5 = (f4 + 16.0f) / 116.0f;
+        float f6 = f4 > 8.0f ? f5 * f5 * f5 : f4 / 903.2963f;
+        float f7 = f5 * f5 * f5;
+        boolean z4 = f7 > 0.008856452f;
+        float f8 = z4 ? f7 : ((f5 * 116.0f) - 16.0f) / 903.2963f;
+        if (!z4) {
+            f7 = ((f5 * 116.0f) - 16.0f) / 903.2963f;
+        }
+        float[] fArr = c;
+        return A.a.a(f8 * fArr[0], f6 * fArr[1], f7 * fArr[2]);
+    }
+
+    public static float f(int i4) {
+        float f4 = i4 / 255.0f;
+        return (f4 <= 0.04045f ? f4 / 12.92f : (float) Math.pow((f4 + 0.055f) / 1.055f, 2.4000000953674316d)) * 100.0f;
+    }
+
+    public static TypedArray g(Resources resources, Resources.Theme theme, AttributeSet attributeSet, int[] iArr) {
+        return theme == null ? resources.obtainAttributes(attributeSet, iArr) : theme.obtainStyledAttributes(attributeSet, iArr, 0, 0);
+    }
+
+    /* JADX WARN: Multi-variable type inference failed */
+    /* JADX WARN: Removed duplicated region for block: B:33:0x00da A[EXC_TOP_SPLITTER, SYNTHETIC] */
+    /* JADX WARN: Removed duplicated region for block: B:48:? A[SYNTHETIC] */
+    /* JADX WARN: Type inference failed for: r3v10 */
+    /* JADX WARN: Type inference failed for: r3v12, types: [android.content.res.TypedArray] */
+    /* JADX WARN: Type inference failed for: r3v6 */
+    /* JADX WARN: Type inference failed for: r3v7 */
+    /* JADX WARN: Type inference failed for: r3v9 */
+    /*
+        Code decompiled incorrectly, please refer to instructions dump.
+        To view partially-correct add '--show-bad-code' argument
+    */
+    public static z.InterfaceC2125d j(android.content.res.XmlResourceParser r24, android.content.res.Resources r25) {
+        /*
+            Method dump skipped, instructions count: 509
+            To view this dump add '--comments-level debug' option
+        */
+        throw new UnsupportedOperationException("Method not decompiled: z.AbstractC2123b.j(android.content.res.XmlResourceParser, android.content.res.Resources):z.d");
+    }
+
+    public static List k(Resources resources, int i4) {
+        if (i4 == 0) {
+            return Collections.EMPTY_LIST;
+        }
+        TypedArray obtainTypedArray = resources.obtainTypedArray(i4);
+        try {
+            if (obtainTypedArray.length() == 0) {
+                return Collections.EMPTY_LIST;
+            }
+            ArrayList arrayList = new ArrayList();
+            if (obtainTypedArray.getType(0) == 1) {
+                for (int i5 = 0; i5 < obtainTypedArray.length(); i5++) {
+                    int resourceId = obtainTypedArray.getResourceId(i5, 0);
+                    if (resourceId != 0) {
+                        String[] stringArray = resources.getStringArray(resourceId);
+                        ArrayList arrayList2 = new ArrayList();
+                        for (String str : stringArray) {
+                            arrayList2.add(Base64.decode(str, 0));
+                        }
+                        arrayList.add(arrayList2);
+                    }
+                }
+            } else {
+                String[] stringArray2 = resources.getStringArray(i4);
+                ArrayList arrayList3 = new ArrayList();
+                for (String str2 : stringArray2) {
+                    arrayList3.add(Base64.decode(str2, 0));
+                }
+                arrayList.add(arrayList3);
+            }
+            return arrayList;
+        } finally {
+            obtainTypedArray.recycle();
+        }
+    }
+
+    public static void l(XmlPullParser xmlPullParser) {
+        int i4 = 1;
+        while (i4 > 0) {
+            int next = xmlPullParser.next();
+            if (next == 2) {
+                i4++;
+            } else if (next == 3) {
+                i4--;
+            }
+        }
+    }
+
+    public static float m() {
+        return ((float) Math.pow((50.0f + 16.0d) / 116.0d, 3.0d)) * 100.0f;
+    }
+
+    public void a(final int i4) {
+        new Handler(Looper.getMainLooper()).post(new Runnable() { // from class: z.h
+            @Override // java.lang.Runnable
+            public final void run() {
+                AbstractC2123b.this.h(i4);
+            }
+        });
+    }
+
+    public abstract void h(int i4);
+
+    public abstract void i(Typeface typeface);
+}

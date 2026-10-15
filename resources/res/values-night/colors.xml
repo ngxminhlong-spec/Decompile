@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="board_background">#303030</color>
+    <color name="circuit_actions_bar_bg">#494344</color>
+    <color name="dark_secondary_text">#daf2f0de</color>
+    <color name="dark_secondary_text_recent">#daf2f0de</color>
+    <color name="dark_text">#f2f0de</color>
+    <color name="disabled_text">#99f2f0de</color>
+    <color name="dlg_bg">#252525</color>
+    <color name="dlg_buttons_bg">#333333</color>
+    <color name="drawer_bg">#252525</color>
+    <color name="element_labels">#f8f0dc</color>
+    <color name="element_nodes">#f8f0dc</color>
+    <color name="element_outline_color">#f8f0dc</color>
+    <color name="grid_lines_color">#22f7f5e9</color>
+    <color name="grid_text_color">#f7f5e9</color>
+    <color name="header_bg">#252525</color>
+    <color name="icons_dark">#f7f5e9</color>
+    <color name="icons_dark_disabled">#99f2f0de</color>
+    <color name="icons_dark_nav">#f7f5e9</color>
+    <color name="latency_bg">#aa444444</color>
+    <color name="light_text">#494344</color>
+    <color name="node_labels">#f8f0dc</color>
+    <color name="path">#f8f0dc</color>
+    <color name="profile_edit_img_border">#333333</color>
+    <color name="recent_project">#333333</color>
+    <color name="recents_bg">#252525</color>
+    <color name="search_bg_color">#353535</color>
+    <color name="separator_light">#494949</color>
+    <color name="share_card_bg">#494949</color>
+    <color name="snackbar_bg_color">#353535</color>
+</resources>

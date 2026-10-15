@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<View xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@drawable/ic_setup_node_bg"
+    android:layout_width="@dimen/setup_nodes_thikness"
+    android:layout_height="@dimen/setup_nodes_height"
+    android:layout_marginStart="11dp"
+    android:layout_marginEnd="11dp"/>
